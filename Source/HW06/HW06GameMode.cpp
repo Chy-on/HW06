@@ -2,6 +2,7 @@
 
 #include "HW06GameMode.h"
 #include "HW06Character.h"
+#include "HW06GameStateBase.h"
 #include "UObject/ConstructorHelpers.h"
 
 AHW06GameMode::AHW06GameMode()
@@ -12,4 +13,5 @@ AHW06GameMode::AHW06GameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+	GameStateClass = AHW06GameStateBase::StaticClass();
 }
